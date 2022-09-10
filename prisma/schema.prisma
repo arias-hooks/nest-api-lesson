@@ -15,6 +15,7 @@ model User {
   id             Int      @id @default(autoincrement())
   email          String   @unique
   hashedPassword String
+  nickname       String?
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
   tasks          Task[]
